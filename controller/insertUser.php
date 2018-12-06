@@ -1,8 +1,11 @@
 <?php
 require "../model/db.php";
 require "../model/volonteerManager.php";
-insertUser($_POST, $db);
-var_dump($_POST);
+if (isset($_POST) && !empty($_POST)) {
+    insertUser($_POST, $db);
+    header("location:index.php");
+    exit;
+}
 require "../view/insertUserView.php";
 
 ?>

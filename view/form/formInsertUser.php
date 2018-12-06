@@ -9,7 +9,7 @@
   </div>
   <div class="form-group">
     <label for="age">Age</label>
-    <input type="number" class="form-control" name="age" id="age" placeholder="Enter l'age'">
+    <input type="number" class="form-control" name="age" id="age" placeholder="Enter l'age">
   </div>
   <div class="form-group">
     <label for="comment">Commentaire</label>
@@ -17,7 +17,10 @@
   </div>
   <div class="form-group">
     <label for="disponibility">Disponibilité</label>
-    <input type="number" class="form-control" name="disponibility" id="disponibility" placeholder="Disponibilité">
+    <select class="form-control" name="disponibility" id="disponibility" value="<?php echo (isset($volonteer)?$volonteer["disponibility"]:""); ?>">
+        <option value="1" selected>Disponibile</option>
+        <option value="0" selected>Indisponibile</option>
+    </select>
   </div>
   <div class="form-group">
     <label for="street">Rue</label>

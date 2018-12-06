@@ -3,6 +3,27 @@ require "template/header.php";
 ?>
 
 <h2>Liste des bénévoles : </h2>
+  <label for="age">Trier par age : </label>
+  <select name="age" id="age">
+      <option value="<?php  ?>" selected>Ascendant</option>
+      <option value="">Descendant</option>
+  </select>
+  <label for="age">Trier par nom : </label>
+  <select name="age" id="age">
+      <option value="<?php  ?>" selected>Ascendant</option>
+      <option value="">Descendant</option>
+  </select>
+  <label for="age">Trier par ville : </label>
+  <select name="age" id="age">
+      <option value="<?php  ?>" selected>Ascendant</option>
+      <option value="">Descendant</option>
+  </select>
+  <label for="disponibility">trier par isponibilité : </label>
+  <select name="disponibility" id="disponibility">
+      <option>Disponible</option>
+      <option>Indisponible</option>
+  </select>
+
 <a href="insertUser.php" class="btn btn-primary mt-5 mb-5">Ajouter un bénévole</a>
 
 <table class="table">
@@ -34,6 +55,7 @@ require "template/header.php";
       <td><?php echo $volonteer["street"]; ?></td>
       <td><?php echo $volonteer["city"]; ?></td>
       <td>
+      <a href="updateUser.php?id=<?php echo $volonteer['ID']; ?>" class="btn btn-success">Modifier</a>
       <a href="deleteUser.php?id=<?php echo $volonteer['ID']; ?>" class="btn btn-primary">Supprimer</a>
       </td>
     </tr>
