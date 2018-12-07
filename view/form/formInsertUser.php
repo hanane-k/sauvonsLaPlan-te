@@ -1,4 +1,6 @@
-<form method="post" action="insertUser.php">
+<a href="index.php" class="mx-5">Retour à la liste des volontaires</a>
+
+<form method="post" action="insertUser.php" class="mt-5">
 <div class="form-group">
     <label for="name">Nom</label>
     <input type="text" class="form-control" name="name" id="name" placeholder="Enter le nom">

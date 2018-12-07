@@ -47,4 +47,16 @@
         ]);
         return $result;
     }
+
+
+    function sortedVolonteers($form, $db) {
+        $sql = "SELECT * FROM volonteer";
+        if (isset($form["order"]) && !empty($form["order"])) {
+            $sql .= " ORDER BY " . $form["order"];
+           
+        }
+        $req = $db->query($sql);
+        $result = $req->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
 ?>

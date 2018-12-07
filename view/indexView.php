@@ -3,27 +3,17 @@ require "template/header.php";
 ?>
 
 <h2>Liste des bénévoles : </h2>
-  <label for="age">Trier par age : </label>
-  <select name="age" id="age">
-      <option value="<?php  ?>" selected>Ascendant</option>
-      <option value="">Descendant</option>
+<form action="" method="post">
+  <label for="select">Trier par : </label>
+  <select name="order" id="select">
+      <option value="">selectionner</option>
+      <option  value="age">age</option>
+      <option  value="name">nom</option>
   </select>
-  <label for="age">Trier par nom : </label>
-  <select name="age" id="age">
-      <option value="<?php  ?>" selected>Ascendant</option>
-      <option value="">Descendant</option>
-  </select>
-  <label for="age">Trier par ville : </label>
-  <select name="age" id="age">
-      <option value="<?php  ?>" selected>Ascendant</option>
-      <option value="">Descendant</option>
-  </select>
-  <label for="disponibility">trier par isponibilité : </label>
-  <select name="disponibility" id="disponibility">
-      <option>Disponible</option>
-      <option>Indisponible</option>
-  </select>
+  <input type="search" name="city" id="ville" placeholder="Ville">
 
+  <input type="submit" value="OK">
+</form>
 <a href="insertUser.php" class="btn btn-primary mt-5 mb-5">Ajouter un bénévole</a>
 
 <table class="table">
