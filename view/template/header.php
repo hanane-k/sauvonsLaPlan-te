@@ -15,7 +15,7 @@
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Sauvons la planète</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam earum est, vitae corrupti iusto eaque impedit ducimus, saepe dignissimos corporis et molestias reprehenderit eum inventore vero voluptas praesentium ipsa.</p>
+        <p class="lead">c'est une association citoyenne nationale de protection de l'environnement.</p>
     </div>
  </header>
  <main class="container">

@@ -9,14 +9,15 @@ require "template/header.php";
       <option value="">selectionner</option>
       <option  value="age">age</option>
       <option  value="name">nom</option>
+      <option  value="disponibility">disponibilité</option>
   </select>
-  <input type="search" name="city" id="ville" placeholder="Ville">
+  <input type="serch" name="city" id="ville" placeholder="Ville">
 
   <input type="submit" value="OK">
 </form>
 <a href="insertUser.php" class="btn btn-primary mt-5 mb-5">Ajouter un bénévole</a>
 
-<table class="table">
+<table class="table text">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -46,7 +47,7 @@ require "template/header.php";
       <td><?php echo $volonteer["city"]; ?></td>
       <td>
       <a href="updateUser.php?id=<?php echo $volonteer['ID']; ?>" class="btn btn-success">Modifier</a>
-      <a href="deleteUser.php?id=<?php echo $volonteer['ID']; ?>" class="btn btn-primary">Supprimer</a>
+      <a href="deleteUser.php?id=<?php echo $volonteer['ID']; ?>" class="btn btn-danger">Supprimer</a>
       </td>
     </tr>
     <?php

@@ -53,7 +53,9 @@
         $sql = "SELECT * FROM volonteer";
         if (isset($form["order"]) && !empty($form["order"])) {
             $sql .= " ORDER BY " . $form["order"];
-           
+            // if ($form["city"] === $db["city"]) {
+            //     $sql .= " WHERE city = " . $form["city"];
+            // }
         }
         $req = $db->query($sql);
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
