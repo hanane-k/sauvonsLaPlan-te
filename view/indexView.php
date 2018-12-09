@@ -9,6 +9,7 @@ require "template/header.php";
       <option value="">selectionner</option>
       <option  value="age">age</option>
       <option  value="name">nom</option>
+      <option  value="city">ville</option>
       <option  value="disponibility">disponibilité</option>
   </select>
   <input type="serch" name="city" id="ville" placeholder="Ville">

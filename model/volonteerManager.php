@@ -53,8 +53,9 @@
         $sql = "SELECT * FROM volonteer";
         if (isset($form["order"]) && !empty($form["order"])) {
             $sql .= " ORDER BY " . $form["order"];
-            // if ($form["city"] === $db["city"]) {
-            //     $sql .= " WHERE city = " . $form["city"];
+            // if ($db["city"] === $form["city"]) {
+            //     $sql .= " WHERE city = ";
+            //     $sql .= $db["city"];
             // }
         }
         $req = $db->query($sql);
